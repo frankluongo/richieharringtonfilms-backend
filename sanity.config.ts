@@ -3,14 +3,16 @@ import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
 
+import {colorInput} from '@sanity/color-input'
+
 export default defineConfig({
   name: 'default',
-  title: 'richieharringtonfilms',
+  title: 'Richie Harrington Films',
 
-  projectId: 'xe94qen7',
-  dataset: 'production',
+  projectId: process.env.SANITY_STUDIO_PROJECT_ID!,
+  dataset: process.env.SANITY_STUDIO_DATASET!,
 
-  plugins: [deskTool(), visionTool()],
+  plugins: [deskTool(), visionTool(), colorInput()],
 
   schema: {
     types: schemaTypes,
