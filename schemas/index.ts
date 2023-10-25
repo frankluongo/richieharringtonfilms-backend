@@ -8,6 +8,7 @@ import pageContact from './models/documents/contact'
 import pageHome from './models/documents/home'
 import pagePages from './models/documents/page'
 
+import contact from './models/objects/contact'
 import gallery from './models/objects/gallery'
 import imageLink from './models/objects/image.link'
 import link from './models/objects/link'
@@ -16,6 +17,7 @@ export const schemaTypes = [
   // Arrays:
   block,
   // Objects:
+  contact,
   gallery,
   imageLink,
   link,

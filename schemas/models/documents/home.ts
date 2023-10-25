@@ -44,6 +44,12 @@ export default {
       ],
     },
     {
+      name: 'videos',
+      title: 'Videos For Carousel',
+      type: 'array',
+      of: [{type: 'url'}],
+    },
+    {
       name: 'featVid',
       title: 'Featured Video',
       type: 'url',

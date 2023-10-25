@@ -61,14 +61,22 @@ export default {
       type: 'url',
     },
     {
+      name: 'contact',
+      title: 'Contact Information',
+      type: 'array',
+      of: [{type: 'contact'}],
+    },
+    {
+      name: 'socials',
+      title: 'Social Links',
+      type: 'array',
+      of: [{type: 'contact'}],
+    },
+    {
       name: 'navigation',
       title: 'Navigation Links',
       type: 'array',
-      of: [
-        {
-          type: 'link',
-        },
-      ],
+      of: [{type: 'link'}],
     },
   ],
   preview: {
