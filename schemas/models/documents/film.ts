@@ -128,9 +128,10 @@ export default {
     select: {
       title: 'title',
       media: 'poster',
+      order: 'order',
     },
     prepare: (e: any) => ({
-      title: e.title,
+      title: `${e.title} (${e.order})`,
       media: e.media,
     }),
   },

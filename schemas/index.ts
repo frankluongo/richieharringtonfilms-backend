@@ -3,10 +3,11 @@ import block from './models/arrays/block'
 import category from './models/documents/category'
 import film from './models/documents/film'
 import global from './models/documents/global'
-import pageAbout from './models/documents/about'
-import pageContact from './models/documents/contact'
-import pageHome from './models/documents/home'
+import pageAbout from './models/documents/page.about'
+import pageContact from './models/documents/page.contact'
+import pageHome from './models/documents/page.home'
 import pagePages from './models/documents/page'
+import pageProjects from './models/documents/page.projects'
 
 import contact from './models/objects/contact'
 import gallery from './models/objects/gallery'
@@ -29,4 +30,5 @@ export const schemaTypes = [
   pageContact,
   pageHome,
   pagePages,
+  pageProjects,
 ]

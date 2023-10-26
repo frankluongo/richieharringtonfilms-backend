@@ -29,8 +29,13 @@ export default {
     },
     {
       name: 'icon',
-      title: 'Icon (optional)',
+      title: 'Icon Image (optional)',
       type: 'image',
+    },
+    {
+      name: 'iconSvg',
+      title: 'Icon SVG (optional)',
+      type: 'text',
     },
   ],
 }
