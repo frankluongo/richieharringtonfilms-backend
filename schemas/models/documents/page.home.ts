@@ -5,47 +5,10 @@ export default {
   icon: () => '🏠',
   fields: [
     {
-      name: 'textColor',
-      title: 'Custom Text Color',
-      type: 'color',
-    },
-    {
-      name: 'aboveVideoText',
-      title: 'Above Video Text',
-      type: 'blockContent',
-    },
-    {
-      name: 'content',
-      title: 'Content',
-      type: 'blockContent',
-      description: 'Text below video',
-    },
-    {
-      name: 'images',
-      title: 'Images',
-      type: 'array',
-      options: {
-        layout: 'grid',
-      },
-      of: [
-        {
-          type: 'image',
-        },
-      ],
-    },
-    {
-      name: 'featProject',
-      title: 'Featured Project',
-      type: 'reference',
-      to: [
-        {
-          type: 'film',
-        },
-      ],
-    },
-    {
       name: 'videos',
       title: 'Videos For Carousel',
+      description:
+        'Videos added here will display in a carousel on the top of the page. Recommended to use videos that are 6 seconds or less',
       type: 'array',
       of: [{type: 'url'}],
     },
@@ -53,16 +16,6 @@ export default {
       name: 'featVid',
       title: 'Featured Video',
       type: 'url',
-    },
-    {
-      name: 'videoTitle',
-      title: 'Video Title',
-      type: 'string',
-    },
-    {
-      name: 'videoDescription',
-      title: 'Video Description',
-      type: 'blockContent',
     },
     {
       name: 'featImage',

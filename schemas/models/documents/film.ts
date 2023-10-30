@@ -3,21 +3,36 @@ export default {
   title: 'Projects',
   type: 'document',
   icon: () => '🎥',
-  fields: [
+  groups: [
     {
-      name: 'textColor',
-      title: 'Custom Text Color',
-      type: 'color',
+      title: 'Page Content',
+      name: 'page',
+      default: true,
+    },
+    {
+      title: 'Properties',
+      name: 'properties',
+    },
+  ],
+  fields: [
+    // PROPERTIES:
+    {
+      name: 'published',
+      title: 'Published?',
+      type: 'boolean',
+      group: 'properties',
     },
     {
       name: 'order',
       title: 'Order',
       type: 'number',
+      group: 'properties',
     },
     {
       name: 'title',
       title: 'Title',
       type: 'string',
+      group: 'properties',
     },
     {
       name: 'slug',
@@ -27,11 +42,36 @@ export default {
         source: 'title',
         maxLength: 100,
       },
+      group: 'properties',
     },
+    {
+      name: 'releaseDate',
+      title: 'Release date',
+      type: 'datetime',
+      group: 'properties',
+    },
+    {
+      name: 'categories',
+      title: 'Categories',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [
+            {
+              type: 'category',
+            },
+          ],
+        },
+      ],
+      group: 'properties',
+    },
+    // PAGE CONTENT:
     {
       title: 'Video URL',
       name: 'videoUrl',
       type: 'url',
+      group: 'page',
     },
     {
       name: 'poster',
@@ -40,6 +80,7 @@ export default {
       options: {
         hotspot: !0,
       },
+      group: 'page',
     },
     {
       name: 'imageSize',
@@ -57,46 +98,31 @@ export default {
           },
         ],
       },
+      group: 'page',
+    },
+    {
+      name: 'photos',
+      title: 'Photos (Displayed above text)',
+      type: 'array',
+      of: [{type: 'photo'}],
+      group: 'page',
     },
     {
       name: 'content',
       title: 'Content',
       type: 'blockContent',
-    },
-    {
-      name: 'published',
-      title: 'Published?',
-      type: 'boolean',
-    },
-    {
-      name: 'releaseDate',
-      title: 'Release date',
-      type: 'datetime',
+      group: 'page',
     },
     {
       name: 'images',
-      title: 'Photo Galleries',
+      title: 'Photo Galleries (Displays below text)',
       type: 'array',
       of: [
         {
           type: 'photoGallery',
         },
       ],
-    },
-    {
-      name: 'categories',
-      title: 'Categories',
-      type: 'array',
-      of: [
-        {
-          type: 'reference',
-          to: [
-            {
-              type: 'category',
-            },
-          ],
-        },
-      ],
+      group: 'page',
     },
   ],
   orderings: [
