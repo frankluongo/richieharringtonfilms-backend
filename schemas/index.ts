@@ -4,6 +4,7 @@ import category from './models/documents/category'
 import film from './models/documents/film'
 import global from './models/documents/global'
 import pageAbout from './models/documents/page.about'
+import pageBts from './models/documents/page.bts'
 import pageContact from './models/documents/page.contact'
 import pageHome from './models/documents/page.home'
 import pagePages from './models/documents/page'
@@ -32,6 +33,7 @@ export const schemaTypes = [
   film,
   global,
   pageAbout,
+  pageBts,
   pageContact,
   pageHome,
   pagePages,

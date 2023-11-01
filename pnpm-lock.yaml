@@ -24,7 +24,7 @@ dependencies:
     specifier: ^3.18.1
     version: 3.18.1(@types/react@18.2.32)(react-dom@18.2.0)(react@18.2.0)(styled-components@5.3.11)
   styled-components:
-    specifier: ^5.3.9
+    specifier: ^5.3.11
     version: 5.3.11(@babel/core@7.23.2)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
 
 devDependencies:
@@ -32,19 +32,19 @@ devDependencies:
     specifier: ^3.0.1
     version: 3.0.1(eslint@8.52.0)(typescript@5.2.2)
   '@types/react':
-    specifier: ^18.0.25
+    specifier: ^18.2.32
     version: 18.2.32
   '@types/styled-components':
-    specifier: ^5.1.26
+    specifier: ^5.1.29
     version: 5.1.29
   eslint:
-    specifier: ^8.6.0
+    specifier: ^8.52.0
     version: 8.52.0
   prettier:
-    specifier: ^3.0.2
+    specifier: ^3.0.3
     version: 3.0.3
   typescript:
-    specifier: ^5.1.6
+    specifier: ^5.2.2
     version: 5.2.2
 
 packages:
