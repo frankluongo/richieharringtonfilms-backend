@@ -23,9 +23,9 @@ export default {
       group: 'properties',
     },
     {
-      name: 'order',
+      name: 'orderRank',
       title: 'Order',
-      type: 'number',
+      type: 'string',
       group: 'properties',
     },
     {
@@ -125,28 +125,6 @@ export default {
       group: 'page',
     },
   ],
-  orderings: [
-    {
-      title: 'Set Order (Desc)',
-      name: 'setOrderDesc',
-      by: [
-        {
-          field: 'order',
-          direction: 'desc',
-        },
-      ],
-    },
-    {
-      title: 'Set Order (Asc)',
-      name: 'setOrderAsc',
-      by: [
-        {
-          field: 'order',
-          direction: 'asc',
-        },
-      ],
-    },
-  ],
   initialValue: {
     order: 0,
   },
@@ -154,10 +132,9 @@ export default {
     select: {
       title: 'title',
       media: 'poster',
-      order: 'order',
     },
     prepare: (e: any) => ({
-      title: `${e.title} (${e.order})`,
+      title: `${e.title}`,
       media: e.media,
     }),
   },
