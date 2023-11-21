@@ -83,6 +83,13 @@ export default {
       group: 'page',
     },
     {
+      name: 'thumbnail',
+      title: 'Thumbnail Image (Homepage)',
+      description: 'This image is used on the homepage only',
+      type: 'image',
+      group: 'page',
+    },
+    {
       name: 'imageSize',
       title: 'Poster Size',
       type: 'string',
