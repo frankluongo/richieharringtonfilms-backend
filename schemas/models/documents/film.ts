@@ -68,6 +68,13 @@ export default {
     },
     // PAGE CONTENT:
     {
+      title: 'Use Photo?',
+      description: 'Use the "Poster" image instead of a video at the top of the page',
+      name: 'usePhoto',
+      type: 'boolean',
+      group: 'page',
+    },
+    {
       title: 'Video URL',
       name: 'videoUrl',
       type: 'url',
